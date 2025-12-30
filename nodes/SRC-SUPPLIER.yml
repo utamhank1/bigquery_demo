@@ -1,0 +1,135 @@
+fileVersion: 1
+id: 52bd44da-d1fa-4faf-aad5-9687f7b58ced
+name: SUPPLIER
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 292e87cb-1a73-4148-8cc2-d9c3b772c799
+          stepCounter: 52bd44da-d1fa-4faf-aad5-9687f7b58ced
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: S_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b864eda8-59ed-4479-b0ce-25b2e345fdb5
+          stepCounter: 52bd44da-d1fa-4faf-aad5-9687f7b58ced
+        config: {}
+        dataType: INT64
+        defaultValue: "NULL"
+        description: ""
+        name: S_NATION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cdb538e8-9a3f-4984-9646-561bc83420ac
+          stepCounter: 52bd44da-d1fa-4faf-aad5-9687f7b58ced
+        config: {}
+        dataType: INT64
+        defaultValue: "NULL"
+        description: ""
+        name: S_SUPP_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 531901df-5baa-4f5d-b8e3-b5e8b3f3ed02
+          stepCounter: 52bd44da-d1fa-4faf-aad5-9687f7b58ced
+        config: {}
+        dataType: FLOAT64
+        defaultValue: "NULL"
+        description: ""
+        name: S_ACCTBAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4b467be8-2796-4e69-ba20-73702fcbb201
+          stepCounter: 52bd44da-d1fa-4faf-aad5-9687f7b58ced
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: S_ADDRESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eea3a720-f2da-4ddb-b8bf-61b57bed1573
+          stepCounter: 52bd44da-d1fa-4faf-aad5-9687f7b58ced
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: S_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 717df1ab-d999-438a-924c-9b5fc6024d9a
+          stepCounter: 52bd44da-d1fa-4faf-aad5-9687f7b58ced
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: S_PHONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: SUPPLIER
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
