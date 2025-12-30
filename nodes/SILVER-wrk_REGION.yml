@@ -1,0 +1,88 @@
+fileVersion: 1
+id: df950e3f-a06b-4faf-b881-250bf5ba661a
+name: wrk_REGION
+operation:
+  config:
+    groupByAll: false
+    insertStrategy: INSERT
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SILVER
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 290edccf-d6d0-4b53-991f-b4da58a387b7
+          stepCounter: df950e3f-a06b-4faf-b881-250bf5ba661a
+        config: {}
+        dataType: STRING
+        description: ""
+        name: R_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 84bcd951-7315-4deb-9107-74ef4c409d6b
+                stepCounter: 976af1ca-02b0-44dc-8b35-007609439f24
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5eb29a8d-a0f0-4f76-b681-68dbd950c51a
+          stepCounter: df950e3f-a06b-4faf-b881-250bf5ba661a
+        config: {}
+        dataType: STRING
+        description: ""
+        name: R_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d0862952-f55b-4117-86f8-4cde7c060ce4
+                stepCounter: 976af1ca-02b0-44dc-8b35-007609439f24
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 378b0741-f3bc-4172-b9a1-6a0005fe98db
+          stepCounter: df950e3f-a06b-4faf-b881-250bf5ba661a
+        config: {}
+        dataType: INT64
+        description: ""
+        name: R_REGION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d78faa1b-bdf7-40ca-bf27-95f2da7d08f0
+                stepCounter: 976af1ca-02b0-44dc-8b35-007609439f24
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          REGION: 976af1ca-02b0-44dc-8b35-007609439f24
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: BRONZE
+            nodeName: REGION
+        join:
+          joinCondition: FROM {{ ref('BRONZE', 'REGION') }} `REGION`
+        name: wrk_REGION
+        noLinkRefs: []
+  name: wrk_REGION
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

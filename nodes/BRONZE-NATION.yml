@@ -1,11 +1,11 @@
 fileVersion: 1
-id: d482eceb-a466-4b71-847a-bdabcd0bfb2f
+id: 7a2895c5-4600-4e40-a478-ec74fc852d5e
 name: NATION
 operation:
   database: ""
   deployEnabled: true
   description: ""
-  locationName: SRC
+  locationName: BRONZE
   metadata:
     columns:
       - acceptedValues:
@@ -13,8 +13,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 27ffc68c-bffb-4bed-a740-df9a84ad8473
-          stepCounter: d482eceb-a466-4b71-847a-bdabcd0bfb2f
+          columnCounter: 612fd3bf-cbfd-4cc5-bc43-1c978c1203ff
+          stepCounter: 7a2895c5-4600-4e40-a478-ec74fc852d5e
         config: {}
         dataType: STRING
         defaultValue: "NULL"
@@ -30,8 +30,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d1ad13e9-cbf8-4938-acf5-c2378bc19a0f
-          stepCounter: d482eceb-a466-4b71-847a-bdabcd0bfb2f
+          columnCounter: f3e4414b-626b-4e11-b438-123ef794c446
+          stepCounter: 7a2895c5-4600-4e40-a478-ec74fc852d5e
         config: {}
         dataType: INT64
         defaultValue: "NULL"
@@ -47,8 +47,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 3ce5e846-3f50-470b-a8f0-234842969120
-          stepCounter: d482eceb-a466-4b71-847a-bdabcd0bfb2f
+          columnCounter: d8565473-1e46-459f-a8d0-61dca1aa296b
+          stepCounter: 7a2895c5-4600-4e40-a478-ec74fc852d5e
         config: {}
         dataType: STRING
         defaultValue: "NULL"
@@ -64,8 +64,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 85eadad8-164b-4e9c-94f8-9b0478ebd55e
-          stepCounter: d482eceb-a466-4b71-847a-bdabcd0bfb2f
+          columnCounter: a1e3a82f-1d29-4efe-84e5-f7c2b764af85
+          stepCounter: 7a2895c5-4600-4e40-a478-ec74fc852d5e
         config: {}
         dataType: INT64
         defaultValue: "NULL"

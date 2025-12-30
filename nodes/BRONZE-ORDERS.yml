@@ -1,11 +1,11 @@
 fileVersion: 1
-id: 2210b856-13c0-4eab-87c8-d6b224c4a7ca
-name: PART
+id: 977964bd-574f-4a5d-a554-f8266b451858
+name: ORDERS
 operation:
   database: ""
   deployEnabled: true
   description: ""
-  locationName: SRC
+  locationName: BRONZE
   metadata:
     columns:
       - acceptedValues:
@@ -13,98 +13,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 89c0e8d5-c04a-4a09-bd22-a8db4e883526
-          stepCounter: 2210b856-13c0-4eab-87c8-d6b224c4a7ca
-        config: {}
-        dataType: STRING
-        defaultValue: "NULL"
-        description: ""
-        name: P_BRAND
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 05f2e862-67fc-4246-b20e-84f1a1ec9691
-          stepCounter: 2210b856-13c0-4eab-87c8-d6b224c4a7ca
-        config: {}
-        dataType: STRING
-        defaultValue: "NULL"
-        description: ""
-        name: P_COMMENT
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 28b29eb5-4080-45e9-b736-f20e5160ce93
-          stepCounter: 2210b856-13c0-4eab-87c8-d6b224c4a7ca
-        config: {}
-        dataType: STRING
-        defaultValue: "NULL"
-        description: ""
-        name: P_CONTAINER
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 9c494a60-a02a-4760-b9c7-006954b3e5f2
-          stepCounter: 2210b856-13c0-4eab-87c8-d6b224c4a7ca
-        config: {}
-        dataType: STRING
-        defaultValue: "NULL"
-        description: ""
-        name: P_MFGR
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 3641f277-591a-4f79-ba0e-17201d8cc574
-          stepCounter: 2210b856-13c0-4eab-87c8-d6b224c4a7ca
-        config: {}
-        dataType: STRING
-        defaultValue: "NULL"
-        description: ""
-        name: P_NAME
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 17dfb259-42d2-437b-a168-d81aaf7bd480
-          stepCounter: 2210b856-13c0-4eab-87c8-d6b224c4a7ca
+          columnCounter: c444fc8b-6b88-426e-aac2-1734c26c5a5d
+          stepCounter: 977964bd-574f-4a5d-a554-f8266b451858
         config: {}
         dataType: INT64
         defaultValue: "NULL"
         description: ""
-        name: P_PART_ID
+        name: O_CUST_ID
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -115,53 +30,138 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 66894e1a-b9d1-4bbd-aa33-e39578ffe2c9
-          stepCounter: 2210b856-13c0-4eab-87c8-d6b224c4a7ca
+          columnCounter: a907515c-9ba4-4e17-8f0b-792dbcbf4070
+          stepCounter: 977964bd-574f-4a5d-a554-f8266b451858
+        config: {}
+        dataType: DATE
+        defaultValue: "NULL"
+        description: ""
+        name: O_ORDERDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 495589e8-1cfc-4d83-8f2b-e746eef58a61
+          stepCounter: 977964bd-574f-4a5d-a554-f8266b451858
+        config: {}
+        dataType: INT64
+        defaultValue: "NULL"
+        description: ""
+        name: O_ORDER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60e89063-c615-4437-ae94-c17709ee73bf
+          stepCounter: 977964bd-574f-4a5d-a554-f8266b451858
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: O_ORDERSTATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25bc22c0-bca5-4407-8bb1-c6456ac18f35
+          stepCounter: 977964bd-574f-4a5d-a554-f8266b451858
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: O_CLERK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2156cb7-8f8c-41ce-bc83-3c18c2792eaa
+          stepCounter: 977964bd-574f-4a5d-a554-f8266b451858
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: O_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8df886e-6219-4e87-8904-6713916fc389
+          stepCounter: 977964bd-574f-4a5d-a554-f8266b451858
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: O_ORDERPRIORITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: accc6192-fb50-4024-a3ed-fafeec8c11f1
+          stepCounter: 977964bd-574f-4a5d-a554-f8266b451858
+        config: {}
+        dataType: INT64
+        defaultValue: "NULL"
+        description: ""
+        name: O_SHIPPRIORITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d366b566-7668-42a1-83b7-d89e93120759
+          stepCounter: 977964bd-574f-4a5d-a554-f8266b451858
         config: {}
         dataType: FLOAT64
         defaultValue: "NULL"
         description: ""
-        name: P_RETAILPRICE
+        name: O_TOTALPRICE
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
         transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 1f652bcc-a873-4869-b308-53c53325694c
-          stepCounter: 2210b856-13c0-4eab-87c8-d6b224c4a7ca
-        config: {}
-        dataType: INT64
-        defaultValue: "NULL"
-        description: ""
-        name: P_SIZE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 141748b2-4682-49e0-bd30-f9e0a0949c8e
-          stepCounter: 2210b856-13c0-4eab-87c8-d6b224c4a7ca
-        config: {}
-        dataType: STRING
-        defaultValue: "NULL"
-        description: ""
-        name: P_TYPE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-  name: PART
+  name: ORDERS
   schema: ""
   sqlType: Source
   type: sourceInput

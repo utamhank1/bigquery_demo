@@ -1,11 +1,11 @@
 fileVersion: 1
-id: 15f1ddcc-15a7-4158-8ee9-59e7c1a198e5
+id: 976af1ca-02b0-44dc-8b35-007609439f24
 name: REGION
 operation:
   database: ""
   deployEnabled: true
   description: ""
-  locationName: SRC
+  locationName: BRONZE
   metadata:
     columns:
       - acceptedValues:
@@ -13,8 +13,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9e16da76-da9b-4793-8dc9-674f8ebc43fa
-          stepCounter: 15f1ddcc-15a7-4158-8ee9-59e7c1a198e5
+          columnCounter: 84bcd951-7315-4deb-9107-74ef4c409d6b
+          stepCounter: 976af1ca-02b0-44dc-8b35-007609439f24
         config: {}
         dataType: STRING
         defaultValue: "NULL"
@@ -30,8 +30,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 564be955-4114-4481-b608-593446e551d5
-          stepCounter: 15f1ddcc-15a7-4158-8ee9-59e7c1a198e5
+          columnCounter: d0862952-f55b-4117-86f8-4cde7c060ce4
+          stepCounter: 976af1ca-02b0-44dc-8b35-007609439f24
         config: {}
         dataType: STRING
         defaultValue: "NULL"
@@ -47,8 +47,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 261debe0-b81d-4ab1-b18b-269afb7775a7
-          stepCounter: 15f1ddcc-15a7-4158-8ee9-59e7c1a198e5
+          columnCounter: d78faa1b-bdf7-40ca-bf27-95f2da7d08f0
+          stepCounter: 976af1ca-02b0-44dc-8b35-007609439f24
         config: {}
         dataType: INT64
         defaultValue: "NULL"
