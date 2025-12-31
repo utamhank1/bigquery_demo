@@ -207,6 +207,34 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: a56a7fb4-0421-4ad6-aabc-5dae0a32444c
+          stepCounter: bd1f31da-9df0-4be8-9dfc-bc89f3ffd528
+        config: {}
+        dataType: INT64
+        description: ""
+        name: PS_AVAILQTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b02bafdb-cc67-4b72-a3d6-787551a9770e
+                stepCounter: 69759f72-0e27-48ef-a991-970bfc81c0a9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11ccb0bd-7684-42f2-a58c-bd40d9f29c9d
+          stepCounter: bd1f31da-9df0-4be8-9dfc-bc89f3ffd528
+        config: {}
+        dataType: FLOAT64
+        description: ""
+        name: PS_SUPPLYCOST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f50cea63-2891-4d19-a41f-6d6d67428859
+                stepCounter: 69759f72-0e27-48ef-a991-970bfc81c0a9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: f7576479-f44d-438b-9c40-e17c2699e071
           stepCounter: bd1f31da-9df0-4be8-9dfc-bc89f3ffd528
         config: {}
@@ -414,8 +442,9 @@ operation:
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
-          wrk_LINEITEM: c14e9622-50a5-4ca3-aaa2-35c70bb1b185
-          wrk_ORDERS: 23085e7f-8610-4b13-87db-9bc901d90059
+          wrk_lineitem: c14e9622-50a5-4ca3-aaa2-35c70bb1b185
+          wrk_orders: 23085e7f-8610-4b13-87db-9bc901d90059
+          wrk_partsupp: 69759f72-0e27-48ef-a991-970bfc81c0a9
         customSQL:
           customSQL: ""
         dependencies:
@@ -423,11 +452,18 @@ operation:
             nodeName: wrk_LINEITEM
           - locationName: SILVER
             nodeName: wrk_ORDERS
+          - locationName: SILVER
+            nodeName: wrk_PARTSUPP
         join:
-          joinCondition: |-
-            FROM {{ ref('SILVER', 'wrk_LINEITEM') }} `wrk_LINEITEM`
-            INNER JOIN {{ ref('SILVER', 'wrk_ORDERS') }} `wrk_ORDERS`
-            ON `wrk_LINEITEM`.`L_ORDER_ID` = `wrk_ORDERS`.`O_ORDER_ID`
+          joinCondition: |
+            FROM {{ ref('SILVER', 'wrk_ORDERS') }} AS wrk_ORDERS
+
+            INNER JOIN {{ ref('SILVER', 'wrk_LINEITEM') }} AS wrk_LINEITEM
+              ON wrk_ORDERS.O_ORDER_ID = wrk_LINEITEM.L_ORDER_ID
+
+            INNER JOIN {{ ref('SILVER', 'wrk_PARTSUPP') }} AS wrk_PARTSUPP
+              ON wrk_LINEITEM.L_PART_ID = wrk_PARTSUPP.PS_PART_ID
+             AND wrk_LINEITEM.L_SUPP_ID = wrk_PARTSUPP.PS_SUPP_ID
         name: wrk_LINEITEM_ORDERS
         noLinkRefs: []
   name: wrk_LINEITEM_ORDERS

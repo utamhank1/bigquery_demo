@@ -443,6 +443,40 @@ operation:
               - columnCounter: 024e21c3-7a58-429d-813c-aaa3134c1136
                 stepCounter: bd1f31da-9df0-4be8-9dfc-bc89f3ffd528
             transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2eac908-b6c4-4c6b-bc54-1f360056b1f6
+          stepCounter: 3042ff80-b3b2-4c70-9103-1d84661013c4
+        config: {}
+        dataType: FLOAT64
+        description: ""
+        name: PS_SUPPLYCOST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 11ccb0bd-7684-42f2-a58c-bd40d9f29c9d
+                stepCounter: bd1f31da-9df0-4be8-9dfc-bc89f3ffd528
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7064137f-1f5c-41f0-8e7f-93ab608dc11b
+          stepCounter: 3042ff80-b3b2-4c70-9103-1d84661013c4
+        config: {}
+        dataType: INT64
+        description: ""
+        name: PS_AVAILQTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a56a7fb4-0421-4ad6-aabc-5dae0a32444c
+                stepCounter: bd1f31da-9df0-4be8-9dfc-bc89f3ffd528
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
