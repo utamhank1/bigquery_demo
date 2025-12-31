@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "1"
+includeSelector: "{ subgraph: \"TPCH-Subgraph\" }"
+name: TPCH-Job
+type: Job
