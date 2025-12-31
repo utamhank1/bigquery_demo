@@ -1,0 +1,116 @@
+fileVersion: 1
+id: 69759f72-0e27-48ef-a991-970bfc81c0a9
+name: wrk_PARTSUPP
+operation:
+  config:
+    groupByAll: false
+    insertStrategy: INSERT
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SILVER
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8facc48-d778-4674-bdfc-d03196c89b1f
+          stepCounter: 69759f72-0e27-48ef-a991-970bfc81c0a9
+        config: {}
+        dataType: INT64
+        description: ""
+        name: PS_PART_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 65126144-006c-467e-be91-7f8cf7c79272
+                stepCounter: a938d1c4-31b0-4217-8b13-cca7ad70840e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a57b55a-57ac-4215-af2b-e38a61232728
+          stepCounter: 69759f72-0e27-48ef-a991-970bfc81c0a9
+        config: {}
+        dataType: INT64
+        description: ""
+        name: PS_SUPP_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 154ea22e-e97e-4a30-8a8e-7358f059a80b
+                stepCounter: a938d1c4-31b0-4217-8b13-cca7ad70840e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b02bafdb-cc67-4b72-a3d6-787551a9770e
+          stepCounter: 69759f72-0e27-48ef-a991-970bfc81c0a9
+        config: {}
+        dataType: INT64
+        description: ""
+        name: PS_AVAILQTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e8278ce9-0ac9-4699-b1b9-5af94378d74c
+                stepCounter: a938d1c4-31b0-4217-8b13-cca7ad70840e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f50cea63-2891-4d19-a41f-6d6d67428859
+          stepCounter: 69759f72-0e27-48ef-a991-970bfc81c0a9
+        config: {}
+        dataType: FLOAT64
+        description: ""
+        name: PS_SUPPLYCOST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 160564f6-8506-474f-8c10-94272d284e2a
+                stepCounter: a938d1c4-31b0-4217-8b13-cca7ad70840e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89de399c-6d0a-4b1b-b277-3d1236cb9b6b
+          stepCounter: 69759f72-0e27-48ef-a991-970bfc81c0a9
+        config: {}
+        dataType: STRING
+        description: ""
+        name: PS_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 21eb1ea0-aa6e-4e2f-b27d-61c43aba278d
+                stepCounter: a938d1c4-31b0-4217-8b13-cca7ad70840e
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          PARTSUPP: a938d1c4-31b0-4217-8b13-cca7ad70840e
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: BRONZE
+            nodeName: PARTSUPP
+        join:
+          joinCondition: FROM {{ ref('BRONZE', 'PARTSUPP') }} `PARTSUPP`
+        name: wrk_PARTSUPP
+        noLinkRefs: []
+  name: wrk_PARTSUPP
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

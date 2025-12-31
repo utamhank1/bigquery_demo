@@ -1,0 +1,101 @@
+fileVersion: 1
+id: a938d1c4-31b0-4217-8b13-cca7ad70840e
+name: PARTSUPP
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: BRONZE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65126144-006c-467e-be91-7f8cf7c79272
+          stepCounter: a938d1c4-31b0-4217-8b13-cca7ad70840e
+        config: {}
+        dataType: INT64
+        defaultValue: "NULL"
+        description: ""
+        name: ps_partkey
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 154ea22e-e97e-4a30-8a8e-7358f059a80b
+          stepCounter: a938d1c4-31b0-4217-8b13-cca7ad70840e
+        config: {}
+        dataType: INT64
+        defaultValue: "NULL"
+        description: ""
+        name: ps_suppkey
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8278ce9-0ac9-4699-b1b9-5af94378d74c
+          stepCounter: a938d1c4-31b0-4217-8b13-cca7ad70840e
+        config: {}
+        dataType: INT64
+        defaultValue: "NULL"
+        description: ""
+        name: ps_availqty
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 160564f6-8506-474f-8c10-94272d284e2a
+          stepCounter: a938d1c4-31b0-4217-8b13-cca7ad70840e
+        config: {}
+        dataType: FLOAT64
+        defaultValue: "NULL"
+        description: ""
+        name: ps_supplycost
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 21eb1ea0-aa6e-4e2f-b27d-61c43aba278d
+          stepCounter: a938d1c4-31b0-4217-8b13-cca7ad70840e
+        config: {}
+        dataType: STRING
+        defaultValue: "NULL"
+        description: ""
+        name: ps_comment
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: PARTSUPP
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

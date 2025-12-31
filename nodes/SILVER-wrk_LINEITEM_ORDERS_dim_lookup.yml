@@ -451,6 +451,7 @@ operation:
           DIM_PART: 05a3ad67-d1de-47bb-94c8-1ae7fc6812be
           DIM_SUPPLIER: 8bc8bc07-1eda-405f-b806-0460546c0f43
           wrk_LINEITEM_ORDERS: bd1f31da-9df0-4be8-9dfc-bc89f3ffd528
+          wrk_PARTSUPP: 69759f72-0e27-48ef-a991-970bfc81c0a9
         customSQL:
           customSQL: ""
         dependencies:
@@ -465,14 +466,16 @@ operation:
           - locationName: SILVER
             nodeName: wrk_PARTSUPP
         join:
-          joinCondition: |-
+          joinCondition: |
             FROM {{ ref('SILVER', 'wrk_LINEITEM_ORDERS') }} `wrk_LINEITEM_ORDERS`
 
             LEFT JOIN {{ ref('GOLD', 'dim_CUSTOMER') }} `DIM_CUSTOMER`
 
             ON `wrk_LINEITEM_ORDERS`.`O_CUST_ID` = `DIM_CUSTOMER`.`C_CUST_ID`
 
-            AND `wrk_LINEITEM_ORDERS`.`O_ORDERDATE` BETWEEN `DIM_CUSTOMER`.`SYSTEM_START_DATE` AND `DIM_CUSTOMER`.`SYSTEM_END_DATE`
+            AND `wrk_LINEITEM_ORDERS`.`O_ORDERDATE` BETWEEN
+                DATE(`DIM_CUSTOMER`.`SYSTEM_START_DATE`) AND DATE(`DIM_CUSTOMER`.`SYSTEM_END_DATE`)
+
 
             /* The dimension lookup will not yield any matches due to a lack of historical data in the customer dimension. */
 
